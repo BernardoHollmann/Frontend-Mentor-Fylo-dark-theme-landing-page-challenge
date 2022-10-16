@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --fs: 14px;
+
+/*Primary*/
+    --Dark-Blue-int-mail: hsl(217, 28%, 15%); /*(intro and email sign up background)*/
+    --Dark-Blue-bg: hsl(218, 28%, 13%); /*(main background)*/
+    --Dark-Blue-footer : hsl(216, 53%, 9%); /*(footer background)*/
+    --Dark-Blue-test : hsl(219, 30%, 18%); /*(testimonials background)*/
+
+/*Accent*/
+    --Cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+    --Blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+    --Light-Red: hsl(0, 100%, 63%); /*(error)*/
+
+/*Neutral*/
+    --White: hsl(0, 0%, 100%);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, .cta{
+    background-color: var(--Dark-Blue-int-mail);
+}
+
+body{
+    background-color: var(--Dark-Blue-bg);
+    font-family: 'Open Sans', sans-serif; /*Body*/
+}
+
+.list-item{
+    color: hsl(0, 0%, 60%);
+    font-weight: 400;
+}
+
+.list-item:hover{
+    font-weight: 700;
+}
+
+h1,h2,h3,h4,h5, .cta, .list-item, .btn{
+    font-family: 'Raleway', sans-serif; /*Headings, Call-to-actions, Header Navigation*/
+}
+
+h2, h3{
+    font-weight: 700;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    line-height: 1.8rem;
+}
+
+.btn-1, .btn-2{
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Cyan);
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+}
+
+.btn-1:hover, .btn-2:hover{
+    background-color: var(--Blue);
+    transition: 0.3s ease-in;
+}
+
+.btn-1{
+    padding: 0.7rem 4rem;
+}
+
+.link{
+    color: var(--Cyan);
+    max-width: 9.5rem;
+    border-bottom: 1px solid var(--Cyan);
+}
+
+.link:hover{
+    color: var(--White);
+    border-bottom: 1px solid var(--White);
+}
+
+.profile{
+    background-color: var(--Dark-Blue-test);
+}
+
+footer{
+    background-color: var(--Dark-Blue-footer)
+}
+
+footer li:hover{
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.fab{
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.fab:hover{
+    color: var(--Cyan);
+    border-color: var(--Cyan);
+}
